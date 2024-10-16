@@ -1,0 +1,34 @@
+Nome tabella: cars
+
+id                 BIGINT                 PRIMARY_KEY       AUTO_INCREMENT, NOT NULL
+brand              VARCHAR(20)            NOT_NULL          INDEX
+model              VARCHAR(70)            NOT_NULL          INDEX
+km                 MEDIUMINT              UNSIGNED          NOT_NULL        INDEX
+registration_year  YEAR                   NOT_NULL          INDEX
+fuel_type          VARCHAR(70)            NOT_NULL
+gear_type          VARCHAR(12)            NOT_NULL
+number_of_gears    TINYINT                UNSIGNED          
+engine_size        SMALLINT               UNSIGNED
+hp                 SMALLINT               UNSIGNED
+traction_type      VARCHAR(10)            NOT_NULL
+doors              TINYINT                UNSIGNED          NOT_NULL
+emission_eu_class  VARCHAR(10)            NOT_NULL            
+vin                CHAR(17)               NOT_NULL          UNIQUE 
+weight             SMALLINT               UNSIGNED          NOT_NULL
+length             SMALLINT               UNSIGNED          NOT_NULL
+height             SMALLINT               UNSIGNED          NOT_NULL
+width              SMALLINT               UNSIGNED          NOT_NULL
+seats              TINYINT                UNSIGNED          NOT_NULL
+average_cons.      FLOAT(4,1)             UNSIGNED          
+trunk_volume       SMALLINT               UNSIGNED          
+owners_number      TINYINT                UNSIGNED
+is_available       BOOLEAN                NOT_NULL          DEFAULT(true)      
+is_damaged         BOOLEAN                DEFAULT(false)
+optional           TEXT                   
+price              DECIMAL(9,2)           UNSIGNED
+rim_size           TINYINT                UNSIGNED          
+license_plate      CHAR(7)                
+color              VARCHAR(30)            NOT_NULL
+vehicle_type       VARCHAR(30)            NOT_NULL
+image_url          TEXT                                      
+description        TEXT                   

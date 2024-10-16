@@ -1,0 +1,16 @@
+
+Nome tabella: books
+
+id                      BIGINT              PRIMARY_KEY  AUTO_INCREMENT NOT_NULL
+title                   VARCHAR(255)        NOT_NULL
+author                  VARCHAR(255)        NULL
+publication_year        YEAR                NULL
+genre                   VARCHAR(255)        NOT_NULL
+plot                    TEXT                NULL
+publisher               VARCHAR(255)        NULL
+number_of_pages         UNSIGNED SMALLINT   NOT_NULL
+isbn                    CHAR(13)            NOT_NULL        UNIQUE
+edition                 VARCHAR(255)        NULL
+available               BOOLEAN             NOT_NULL        DEFAULT(true)
+position                CHAR(3)             NULL
+note                    TEXT                NULL
